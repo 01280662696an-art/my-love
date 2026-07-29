@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Story ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- شاشة البداية -->
+
+<section id="intro">
+
+<div class="intro-overlay"></div>
+
+<div class="intro-box">
+
+<h1>🤍 عندي مفاجأة ليكي 🤍</h1>
+
+<p>
+اضغطي على الزر... وسيبي الباقي عليا ❤️
+</p>
+
+<button id="startBtn">
+
+ابدأ المفاجأة ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- المشهد الرئيسي -->
+
+<section id="scene" class="hidden">
+
+<!-- النجوم -->
+
+<div id="stars"></div>
+
+<!-- الشهب -->
+
+<div id="shootingStars"></div>
+
+<!-- القمر -->
+
+<div id="moon"></div>
+
+<!-- القوس -->
+
+<div id="bowContainer">
+
+<svg id="bow" viewBox="0 0 350 500">
+
+<defs>
+
+<linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#ffe48f"/>
+
+<stop offset="45%" stop-color="#c88a2d"/>
+
+<stop offset="100%" stop-color="#704010"/>
+
+</linearGradient>
+
+</defs>
+
+<path
+
+id="bowBody"
+
+d="M250 40
+Q70 250
+250 460"
+
+fill="none"
+
+stroke="url(#wood)"
+
+stroke-width="16"
+
+stroke-linecap="round"/>
+
+<!-- الوتر -->
+
+<polyline
+id="bowString"
+points="250,40 250,250 250,460"
+fill="none"
+stroke="#fff8d6"
+stroke-width="4"/>
+
+</svg>
+
+</div>
+
+<!-- السهم -->
+
+<div id="arrowContainer">
+
+<svg id="arrow" viewBox="0 0 320 60">
+
+<line
+
+x1="20"
+
+y1="30"
+
+x2="255"
+
+y2="30"
+
+stroke="#e5e5e5"
+
+stroke-width="4"/>
+
+<polygon
+
+points="255,30 228,18 228,42"
+
+fill="#e5e5e5"/>
+
+<polygon
+
+points="18,30 0,18 8,30 0,42"
+
+fill="#ffffff"/>
+
+</svg>
+
+</div>
+
+<!-- القلب -->
+
+<div id="heartContainer">
+
+<svg id="heart" viewBox="0 0 512 512">
+
+<path
+
+id="heartShape"
+
+fill="#ff2d55"
+
+d="M256 470
+L220 438
+C90 320
+40 250
+40 160
+C40 80
+100 40
+170 40
+C215 40
+245 65
+256 95
+C267 65
+297 40
+342 40
+C412 40
+472 80
+472 160
+C472 250
+422 320
+292 438
+Z"/>
+
+</svg>
+
+</div>
+
+<div id="sparkContainer"></div><!-- معرض الصور -->
+
+<div id="gallery">
+
+<div class="photo-card">
+
+<img
+id="photo"
+src="assets/images/01-first.jpg.jpg"
+alt="Our Photo">
+
+<p id="caption">
+
+</p>
+
+</div>
+
+</div>
+
+<!-- شاشة النهاية -->
+
+<div id="ending">
+
+<h1>
+
+أسأل الله أن يجمع بيننا في الدنيا زوجين ❤️
+
+ويجمع بيننا في الجنة رفيقين 🤍
+
+</h1>
+
+<p>
+
+Forever Starts With You ❤️
+
+</p>
+
+<h2>
+
+Made With Love By Ahmed
+
+</h2>
+
+</div>
+
+</section>
+
+<!-- الأصوات -->
+
+<audio
+id="piano"
+loop>
+
+<source src="assets/sounds/piano.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="drawSound">
+
+<source src="assets/sounds/bow-draw.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="releaseSound">
+
+<source src="assets/sounds/arrow-release.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="heartHit">
+
+<source src="assets/sounds/heart-hit.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="heartbeat">
+
+<source src="assets/sounds/heartbeat.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="sparkle">
+
+<source src="assets/sounds/sparkle.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
